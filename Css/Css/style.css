@@ -1,0 +1,428 @@
+
+/* Common Css Start */
+:root {
+    --hlt-color:#cfc91d;
+    --primary-color: #02918b;
+    --secondary-color: #7e8287;
+    --light-text: #ffffff;
+    --dark-text: #0b1016;
+    --primary-font: "Open Sans", sans-serif;
+  }
+  body {
+    font-family: var(--primary-font);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  span,
+  small {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ol,
+  ul {
+    list-style-type: none;
+  }
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  .section_info{
+    text-align: center;
+  }
+  .section_info h2 {
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+  
+  .section_info p {
+    font-size: 16px;
+    line-height: 41px;
+    color: var(--secondary-color);
+  }
+  .section_info p span {
+    font-size: 23px;
+    font-weight: 800;
+  }
+  /* Common Css End */
+  
+  /* Nav Section Css Start */
+  #nav{
+    background: var(--primary-color);
+  }
+  #nav #nav_menu ul li a{
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--light-text);
+    text-transform: uppercase;
+    padding: 13.5px 25px;
+    transition: .7s;
+  }
+  #nav #nav_menu ul li a:hover{
+    background-color: var(--hlt-color);
+    border-radius: 10px 0 10px 0;
+  }
+  /* Nav Section Css End */
+  
+  /* Banner Section Css Start */
+  #banner{
+    height: 728px;
+    background-image: url(../img/banner_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  #banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.68);
+    z-index: -1;
+  }
+  #banner .banner_content{
+    color: var(--light-text);
+  }
+  #banner .banner_content h4 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  #banner .banner_content h1 {
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
+  
+  #banner .banner_content p {
+    font-size: 18px;
+  }
+  #banner .banner_content img{
+    margin:38px auto;
+  }
+  
+  #banner .banner_content a {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--dark-text);
+    background-color: var(--hlt-color);
+    padding: 14px 57px;
+    display: inline-block;
+  }
+  
+  #banner .banner_content a:hover {
+    border-radius: 15px;
+  }
+  /* Banner Section Css End */
+  
+  /* About Section Css Start */
+  #about{
+    padding: 100px 0;
+  }
+  #about .section_info{
+    margin-bottom: 50px;
+  }
+  #about .about_item {
+    border-right: 1px solid var(--secondary-color);
+    padding: 35px 62px 55px;
+    margin-bottom: 40px;
+    color: var(--secondary-color);
+  }
+  
+  #about .about_item:last-child{
+    border-right-color: transparent;
+  }
+  
+  #about .about_item h3 {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 30px 0;
+  }
+  
+  #about .about_item p {
+    font-size: 11px;
+    line-height: 21px;
+}
+  /* About Section Css End */
+  
+  /* Service Section Css Start */
+  #service{
+    background-image: url(../img/service.bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0e8;
+    background-position: top right;
+    position: relative;
+    padding: 80px 0 25px;
+}
+#service .inner_container {
+    width: 50%;
+    padding-right: 92px;
+ }
+
+ #service .about_item {
+    width: 50%;
+    padding-right: 40px;
+    margin-bottom: 57px;
+ }
+ #service .about_item img{
+    padding-top: 50px;
+ }
+ #service .about_item h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px 0;
+ }
+
+ #service .about_item p{
+    font-size: 11px;
+    line-height: 21px;
+    color: #7e8287;
+ }
+  /* Service Section Css End */
+
+  /* work css start */
+
+#mywork{
+    margin: 80px 0 100px;
+}
+#mywork .section_info{
+    padding-bottom: 80px;
+}
+#mywork .work-item{
+  width: 25%;
+  position: relative;
+}
+#mywork .work-item .overlay{
+  text-align: center;
+  inset: 20px 27px;
+  background-color: rgba(2,145,139,0.85);
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .7s;
+  transform: scale(0) skew(5deg);
+}
+#mywork .work-item:hover .overlay{
+  opacity: 1;
+  visibility: visible;
+  transform-origin:center;
+  transform: scale(1) skew(0) ;
+}
+#mywork .work-item .overlay h4{
+  font-size: 16px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+#mywork .work-item .overlay p{
+  font-size: 13px;
+  line-height: 21px;
+  width: 190px;
+  margin: auto;
+}
+/* work css end */
+
+/* contact css start */
+#contact  .section_info{
+  margin: 80px 0 100px;
+}
+#contact .container{
+  background-image: url(../img/contact-bg.jpg);
+}
+#contact .form {
+  padding: 60px 112px;
+  text-align: center;
+  background-color: #0a0a0b;
+}
+
+#contact .form .inputfield {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #7e8287;
+  width: 100%;
+  border: none;
+  text-align: center;
+  background: none;
+  border-bottom: 1px solid #898989;
+  padding: 40px 30px 10px;
+  transition: .7s;
+}
+#contact .form .inputfield {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact .form  textarea {
+  margin: 10px 0 90px;
+}
+
+#contact .form button.inputfield {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #0b1016;
+  background-color:var(--hlt-color);
+  display: inline-block;
+  width: auto;
+  padding: 15px 65px;
+  margin-top: 65px;
+  cursor: pointer;
+  transition: .7s;
+}
+#contact .form button.inputfield:hover {
+  border-radius: 30px;
+}
+
+/* contact css end */
+
+/* footer css start */
+#footer{
+  background-color: #000000;
+  font-size: 14px;
+  color: var(--secondary-color);
+  padding:20px 0 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* footer css end */
+
+
+/* extra extra large device */
+@media (min-width: 1400px) {
+  #about .about_item p {
+    font-size: 15px;
+  }
+  #service .service_item h4 {
+    font-size: 20px;
+  }
+  #service .service_item p {
+    font-size: 15px;
+  }
+}
+/* extra large device */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #about .about_item h4 {
+    font-size: 18px;
+  }
+  #about .about_item p {
+    font-size: 12px;
+  }
+  #service .service_item h4 {
+    font-size: 18px;
+}
+#service .service_item p {
+    font-size: 14px;
+}
+}
+/* large device */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #banner .banner_contant h1 {
+    font-size: 50px;
+  }
+  #about .about_item {
+    padding: 35px 38px 55px;
+  }
+  .section_info p {
+    font-size: 15px;
+  }
+  #service {
+    height: 650px;
+  }
+  #service .service_item {
+    padding: 0px 95px 30px 0px;
+  }
+  #mywork .images .overlay p {
+    font-size: 11px;
+  }
+}
+/* medium device */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #banner .banner_contant h1 {
+    font-size: 45px;
+    letter-spacing: 18px;
+  }
+  #about .about_item p {
+    font-size: 15px;
+  }
+  .section_info p {
+    line-height: 35px;
+  }
+
+  #service .section_info {
+    margin-bottom: 20px;
+  }
+  #service .service_item h4 {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  #service .service_item {
+    padding: 0px 100px 15px 0px;
+  }
+  #mywork .work-item .overlay p {
+    font-size: 14px;
+    line-height: 21px;
+    width: 116px;
+    margin: auto;
+  }
+}
+/* small device */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #banner {
+    height: 560px;
+  }
+  #banner .banner_contant h4 {
+    font-size: 20px;
+  }
+  #banner .banner_contant h1 {
+    font-size: 35px;
+    letter-spacing: 10px;
+  }
+  #about .about_item h4 {
+    font-size: 20px;
+  }
+  #about .about_item p {
+    font-size: 18px;
+  }
+  #about .about_item {
+    border-right: none;
+    margin-bottom: 0px;
+  }
+  #service {
+    background-image: none;
+  }
+  #service .section_info {
+    margin-bottom: 40px;
+  }
+  #service .service_item h4 {
+    margin: 10px 0;
+  }
+  #mywork .work-item {
+    width: 50%;
+    position: relative;
+  }
+  #mywork .work-item .overlay p {
+    font-size: 14px;
+    line-height: 21px;
+    width: 116px;
+    margin: auto;
+  }
+}
+
+/* extra small device */
+@media (max-width: 575.98) {
+  
+}
